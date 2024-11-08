@@ -10,6 +10,7 @@
     text-align: center;
     font-family: Arial, sans-serif;
     padding: 0 20px;
+    margin: 0; /* Ensure no external spacing */
   }
   
   /* Title styling */
@@ -27,7 +28,7 @@
     color: #f1f1f1;
     line-height: 1.6;
     max-width: 600px;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0; /* Ensure vertical centering */
   }
   
   /* Button styling */
