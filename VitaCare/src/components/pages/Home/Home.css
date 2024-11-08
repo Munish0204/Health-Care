@@ -1,64 +1,133 @@
 /* Home container styling */
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #4CAF50, #66bb6a);
-    color: #ffffff;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    padding: 0 20px;
-    margin: 0; /* Ensure no external spacing */
-  }
-  
-  /* Title styling */
-  .home-container h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #ffffff;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Subtitle styling */
-  .home-container p {
-    font-size: 1.5rem;
-    color: #f1f1f1;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 0 40px 0; /* Ensure vertical centering */
-  }
-  
-  /* Button styling */
-  .home-button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #4CAF50;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-transform: uppercase;
-  }
-  
-  .home-button:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
-  }
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .home-container h1 {
-      font-size: 2.5rem;
-    }
-  
-    .home-container p {
-      font-size: 1.2rem;
-    }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgb(17, 24, 39), rgb(0, 0, 0));
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+
+/* Doctor image styling */
+.home-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.home-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtitle styling */
+.home-container p {
+  font-size: 1.5rem;
+  color: red;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* Search bar styling */
+.home-search-bar {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.home-search-bar::placeholder {
+  color: #999;
+}
+
+.home-search-bar:focus {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.home-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4CAF50;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+.home-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Card container */
+.home-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card-description p{
+  color: #0000;
+}
+
+/* Individual card styling */
+.home-card {
+  width: 250px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Card image styling */
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Card description */
+.card-description p{
+  font-size: 0.95rem;
+  color: #000;
+}

@@ -1,0 +1,60 @@
+.about-container {
+    width: 100%;
+    min-height: 100vh; /* Ensures the background covers the entire screen height */
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, rgb(17, 24, 39), rgb(0, 0, 0));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container h1, .about-container h2 {
+    color: #a5d6a7;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .about-overview, .about-vision, .about-mission {
+    margin-bottom: 30px;
+    max-width: 800px; /* Limits text width for readability */
+  }
+  
+  .about-overview p, .about-vision p, .about-mission ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .about-vision blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 4px solid #a5d6a7;
+  }
+  
+  .about-mission ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about-mission li {
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 10px;
+    }
+  
+    .about-container h1, .about-container h2 {
+      font-size: 1.5em;
+    }
+  
+    .about-overview p, .about-vision p, .about-mission ul {
+      font-size: 1em;
+    }
+  }
+  
