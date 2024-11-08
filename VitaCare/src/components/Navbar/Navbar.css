@@ -1,56 +1,64 @@
-/* Navbar.css */
-
+/* Navbar container styling */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-  }
-  
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar-links li {
-    display: inline;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar-links a:hover {
-    background-color: #388e3c;
-  }
-  
-  /* Responsive navbar for smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.navbar-logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Navbar links container */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+/* Each link item */
+.navbar-links li {
+  display: inline;
+}
+
+/* Link styling */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Attractive hover effect */
+.navbar-links a:hover {
+  background: linear-gradient(90deg, #4CAF50, #66bb6a);
+  transform: scale(1.1); 
+  box-shadow: 0px 4px 8px rgba(102, 187, 106, 0.3); 
+}
+
+/* Responsive navbar for smaller screens */
 @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar-links {
-      flex-direction: column;
-      gap: 10px;
-      width: 100%;
-    }
-  
-    .navbar-links a {
-      width: 100%;
-      text-align: left;
-      padding: 10px;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-links a {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+}
