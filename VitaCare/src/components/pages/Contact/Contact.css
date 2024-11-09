@@ -1,0 +1,45 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh; /* Make the container take up the full viewport height */
+    background-image: linear-gradient(to right, rgb(17, 24, 39), rgb(0, 0, 0));
+    color: #fff; /* White text for contrast on dark background */
+  }
+  
+  .doctor-card {
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .profile-photo {
+    margin: 0 auto 10px;
+  }
+  
+  .profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff !important;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #ccc !important;
+    margin: 5px 0;
+  }
+  

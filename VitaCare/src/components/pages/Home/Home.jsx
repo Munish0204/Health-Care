@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import Doctor from '../../../assets/doctor.jpeg';
+import Doctor from '../../../assets/E.jpg';
 import Expect from '../../../assets/Expect.jpg';
 import hour from '../../../assets/24.jpg'
 const Home = () => {
@@ -24,17 +24,17 @@ const Home = () => {
       <div className="home-cards">
         <div className="home-card">
           <img src={Expect} alt="Doctor" className="card-image" />
-          <h3 className="card-title">Expert Consultation</h3>
+          <h3 className="card-title"><b>Expert Consultation</b></h3>
           <p className="card-description">Get advice from top medical professionals.</p>
         </div>
         <div className="home-card">
           <img src={Doctor} alt="Doctor" className="card-image" />
-          <h3 className="card-title">Health Tips</h3>
+          <h3 className="card-title"><b>Health Tips</b></h3>
           <p className="card-description">Daily tips for a healthier lifestyle.</p>
         </div>
         <div className="home-card">
           <img src={hour} alt="Doctor" className="card-image" />
-          <h3 className="card-title">24/7 Support</h3>
+          <h3 className="card-title"><b>24/7 Support</b></h3>
           <p className="card-description">We're here to help you anytime, anywhere.</p>
         </div>
       </div>
