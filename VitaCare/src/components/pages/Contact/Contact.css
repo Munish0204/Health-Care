@@ -31,13 +31,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
-  h2 {
+  .contact-container h2 {
     font-size: 18px;
     margin-top: 10px;
     color: #fff !important;
   }
   
-  p {
+  .contact-container p {
     font-size: 14px;
     color: #ccc !important;
     margin: 5px 0;

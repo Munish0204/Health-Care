@@ -23,9 +23,10 @@
     max-width: 800px; /* Limits text width for readability */
   }
   
-  .about-overview p, .about-vision p, .about-mission ul {
+  .about-overview p, .about-vision p, .about-mission ul,li {
     font-size: 1.1em;
     line-height: 1.6;
+    color: #ffffff !important;
   }
   
   .about-vision blockquote {
@@ -42,8 +43,12 @@
   
   .about-mission li {
     margin-bottom: 8px;
+    color: #ffffff !important;
   }
   
+  .about-mission strong{
+    color: red;
+  }
   @media (max-width: 600px) {
     .about-container {
       padding: 10px;
