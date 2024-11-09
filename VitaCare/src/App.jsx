@@ -7,15 +7,20 @@ import Contact from './components/pages/Contact/Contact';
 import DoctorConsultation from './components/pages/DoctorConsultation/DoctorConsultation';
 import Profile from './components/pages/Profile/Profile';
 import Login from './components/pages/Login/Login';
+import SymptomVoiceQuery from './components/pages/Home/SymptomVoiceQuery';
+import VoiceQuery from './components/pages/Home/VoiceQuery/VoiceQuery';
+import SymptomBasedQuery from './components/pages/Home/SymptomBasedQuery/SymptomBasedQuery';  
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <div>
-       
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/symptom-voice-query" element={<SymptomVoiceQuery />} />
+          <Route path="/voice-query" element={<VoiceQuery />} />
+          <Route path="/symptom-based-query" element={<SymptomBasedQuery />} /> {/* Fixed typo */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/doctor-consultation" element={<DoctorConsultation />} />

@@ -1,0 +1,49 @@
+/* SymptomVoiceQuery.css */
+
+.symptom-voice-query-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(17, 24, 39), rgb(0, 0, 0));
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .symptom-voice-query-container h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Updated Button Styles with Teal-Purple Gradient */
+  .symptom-query-button,
+  .voice-query-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #20c997, #6f42c1); /* Teal to Purple */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 15px;
+    width: 220px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .symptom-query-button:hover,
+  .voice-query-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #17a589, #5a31a1); /* Darker Teal to Purple */
+  }
+  
+  .symptom-query-button:active,
+  .voice-query-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  

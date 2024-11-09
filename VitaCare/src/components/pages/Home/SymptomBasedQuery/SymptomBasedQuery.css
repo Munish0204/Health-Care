@@ -1,0 +1,113 @@
+/* Symptom-Based Query Page */
+.symptom-based-query-container {
+    background-image: linear-gradient(to right, rgb(17, 24, 39), rgb(0, 0, 0));
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .symptom-based-query-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .symptom-based-query-container p {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    box-sizing: border-box;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #1abc9c;
+    outline: none;
+  }
+  
+  select {
+    background-color: #ecf0f1;
+  }
+  
+  button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #16a085;
+    transform: translateY(-5px);
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .generated-query {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .generated-query h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .generated-query p {
+    font-size: 16px;
+    color: #34495e;
+  }
+  
+  .generated-query a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .generated-query a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .symptom-based-query-container {
+      width: 90%;
+    }
+  
+    button {
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
